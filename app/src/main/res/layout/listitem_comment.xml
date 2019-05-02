@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_container"
+        android:id="@+id/layout_commentItem">
+
+        <ImageView
+            android:layout_width="@dimen/image_size_30dp"
+            android:layout_height="@dimen/image_size_30dp"
+            android:id="@+id/imageView_comment"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_comment_name"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView_comment"
+            android:textSize="@dimen/fontsize_13dp"
+            android:textColor="@color/colorFontGray"
+            android:layout_margin="@dimen/padding_5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_comment_time"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorFontGray"
+            android:textSize="@dimen/fontsize_10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_comment"
+            android:layout_toRightOf="@+id/imageView_comment"
+            android:layout_below="@+id/text_comment_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/padding_5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/fontsize_17dp"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_comment_menu"
+            android:src="@drawable/more"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="-5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

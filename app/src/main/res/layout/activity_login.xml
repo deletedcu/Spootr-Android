@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/layout_login">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10">
+                <ImageView
+                    android:layout_width="@dimen/image_size_100dp"
+                    android:layout_height="@dimen/image_size_100dp"
+                    android:id="@+id/imageView"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/spootr"
+                    android:layout_marginTop="50dp"
+                    android:scaleType="fitCenter" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_40dp"
+                    android:inputType="textPersonName"
+                    android:id="@+id/text_login_username"
+                    android:layout_below="@+id/imageView"
+                    android:textSize="@dimen/fontsize_17dp"
+                    android:textColor="@color/colorFontWhite"
+                    android:hint="Username / Email"
+                    android:textColorHint="@color/colorWhite"
+                    android:background="@drawable/textfield"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="@dimen/margin_40dp"
+                    android:layout_marginRight="@dimen/margin_40dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_40dp"
+                    android:inputType="textPassword"
+                    android:id="@+id/text_login_password"
+                    android:textSize="@dimen/fontsize_17dp"
+                    android:textColor="@color/colorFontWhite"
+                    android:hint="Password"
+                    android:textColorHint="@color/colorWhite"
+                    android:background="@drawable/textfield"
+                    android:layout_below="@+id/text_login_username"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/margin_40dp"
+                    android:layout_marginRight="@dimen/margin_40dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_40dp"
+                    android:id="@+id/button_login"
+                    android:text="Login"
+                    android:textSize="@dimen/fontsize_17dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorFontWhite"
+                    android:textAllCaps="false"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button"
+                    android:layout_below="@+id/text_login_password"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/margin_40dp"
+                    android:layout_marginRight="@dimen/margin_40dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Forgot your password?"
+                    android:id="@+id/button_forgotpassword"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontsize_13dp"
+                    android:textAllCaps="false"
+                    android:background="@android:color/transparent"
+                    android:layout_below="@+id/button_login"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorTextBackground">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Don't have an account?"
+                            android:id="@+id/textView12"
+                            android:layout_centerInParent="true"
+                            android:textSize="@dimen/fontsize_13dp"
+                            android:textColor="@color/colorWhite"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Sign Up."
+                            android:id="@+id/button_login_signup"
+                            android:textSize="@dimen/fontsize_13dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorWhite"
+                            android:gravity="left|center_vertical"
+                            android:background="@android:color/transparent"
+                            android:textAllCaps="false"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

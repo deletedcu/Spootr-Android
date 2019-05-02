@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFDED7</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorMain">#FF7F00</color>
+    <color name="colorTextBackground">#FC9238</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorShadow">#E1E1E1</color>
+    <color name="colorFontWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkGray">#555555</color>
+    <color name="colorFontGray">#AAAAAA</color>
+    <color name="colorButton">#2E9F38</color>
+    <color name="colorMenu">#474747</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorSelectedBackground">#25ABFF</color>
+
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+    <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/list_item"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_item_container">
+        <ImageView
+            android:layout_width="@dimen/image_size_30dp"
+            android:layout_height="@dimen/image_size_30dp"
+            android:id="@+id/image_blocklist_user"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_blocklist_name"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/fontsize_15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image_blocklist_user"
+            android:layout_toLeftOf="@+id/button_blocklist_unblock"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button_blocklist_unblock"
+            android:background="@android:color/transparent"
+            android:text="UNBLOCK"
+            android:textSize="@dimen/fontsize_15dp"
+            android:textColor="@color/colorButton"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

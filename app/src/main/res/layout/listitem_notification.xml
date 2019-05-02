@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_item_container">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_notification_time"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorFontGray"
+            android:textSize="@dimen/fontsize_10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/text_notification_time"
+            android:layout_marginTop="@dimen/padding_10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/text_notification_type"
+                android:textColor="@color/colorMain"
+                android:textSize="@dimen/fontsize_17dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_notification_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontsize_17dp"
+                android:layout_toRightOf="@+id/text_notification_type"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:lines="1" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

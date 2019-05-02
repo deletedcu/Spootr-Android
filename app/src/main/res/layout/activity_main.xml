@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_main"
+        android:name="com.google.android.gms.maps.MapFragment"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFontGray"
+        android:alpha="0.7"/>
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mainTabBar"/>
+
+    <com.startsmake.mainnavigatetabbar.widget.MainNavigateTabBar
+        android:id="@+id/mainTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_2"
+        app:containerId="@+id/main_container"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/button_main_post"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/post"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+</RelativeLayout>

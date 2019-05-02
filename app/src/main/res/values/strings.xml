@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Spootr</string>
+    <string name="project_number">145453448157</string>
+    <string name="api_key">AIzaSyBV23aqkF-AbMoAOQ6iGPLiMWlnEyk9csc</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="location_alert">By accessing your location, this app can let you know what others have spotted at your area. Do you want to enable GPS?</string>
+    <string name="close_alert">Do you want to close the app?</string>
+    <string name="share_via">![CDATA[<a href="https://play.google.com/store/apps/details?id=com.ottawa.spootr2">Spootr on the Google Play</a>]]</string>
+
+</resources>

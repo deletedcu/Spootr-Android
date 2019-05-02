@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/list_item"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/list_item_container">
+
+        <ImageView
+            android:layout_width="@dimen/image_size_30dp"
+            android:layout_height="@dimen/image_size_30dp"
+            android:id="@+id/image_chatlist_user"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_10dp"/>
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:id="@+id/image_chatlist_dot"
+            android:background="@drawable/image_dot"
+            android:layout_alignTop="@+id/image_chatlist_user"
+            android:layout_alignRight="@+id/image_chatlist_user"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_chatlist_time"
+            android:textSize="@dimen/fontsize_10dp"
+            android:textColor="@color/colorFontGray"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/padding_3dp"
+            android:layout_marginRight="@dimen/padding_3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_chatlist_name"
+            android:textSize="@dimen/fontsize_15dp"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@+id/image_chatlist_user"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/padding_10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_chatlist_message"
+            android:textSize="@dimen/fontsize_15dp"
+            android:textColor="@color/colorFontGray"
+            android:layout_below="@+id/text_chatlist_name"
+            android:layout_alignLeft="@+id/text_chatlist_name"/>
+
+    </RelativeLayout>
+</LinearLayout>

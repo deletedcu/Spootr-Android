@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_container">
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="What happened?"
+            android:textSize="@dimen/fontsize_20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorFontGray"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_popupreport_content"
+            android:text="Offensive content"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontsize_17dp"
+            android:textAllCaps="false"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:background="@drawable/button_popup"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_popupreport_target"
+            android:text="This post targets someone"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontsize_17dp"
+            android:textAllCaps="false"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:background="@drawable/button_popup"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_popupreport_spam"
+            android:text="Spam"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontsize_17dp"
+            android:textAllCaps="false"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:background="@drawable/button_popup"/>
+
+    </LinearLayout>
+</RelativeLayout>

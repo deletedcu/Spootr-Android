@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/list_item"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_container">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Circle"
+            android:id="@+id/text_circle"
+            android:textSize="@dimen/fontsize_17dp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/image_circle_state"
+            android:paddingTop="@dimen/padding_10dp"
+            android:paddingBottom="@dimen/padding_10dp"/>
+
+        <ImageView
+            android:layout_width="@dimen/image_size_20dp"
+            android:layout_height="@dimen/image_size_20dp"
+            android:id="@+id/image_circle_state"
+            android:src="@drawable/plus"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside" />
+
+    </RelativeLayout>
+</LinearLayout>

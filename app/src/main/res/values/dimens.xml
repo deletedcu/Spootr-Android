@@ -1,0 +1,50 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="header_height">44dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <!--Default text fontsize -->
+    <dimen name="fontsize_25dp">25dp</dimen>
+    <dimen name="fontsize_20dp">20dp</dimen>
+    <dimen name="fontsize_17dp">17dp</dimen>
+    <dimen name="fontsize_15dp">15dp</dimen>
+    <dimen name="fontsize_13dp">13dp</dimen>
+    <dimen name="fontsize_10dp">10dp</dimen>
+    <!--Default list item margin, padding, corner radius -->
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_3dp">3dp</dimen>
+    <dimen name="list_item_padding_bottom">3dp</dimen>
+    <dimen name="shadow_2dp">2dp</dimen>
+    <dimen name="corner_radius_7dp">7dp</dimen>
+    <!--Default image size -->
+    <dimen name="image_size_100dp">100dp</dimen>
+    <dimen name="image_size_70dp">70dp</dimen>
+    <dimen name="image_size_40dp">40dp</dimen>
+    <dimen name="image_size_30dp">30dp</dimen>
+    <dimen name="image_size_20dp">20dp</dimen>
+    <dimen name="image_size_22dp">22dp</dimen>
+    <!--Default button -->
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="button_40dp">40dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="menu_height_60dp">60dp</dimen>
+    <dimen name="menu_height_44dp">44dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <dimen name="radio_button_stroke_border">1dp</dimen>
+
+    <dimen name="popup_menu_width1">220dp</dimen>
+    <dimen name="popup_menu_width2">180dp</dimen>
+    <dimen name="popup_menu_width3">220dp</dimen>
+    <dimen name="popup_like_width">245dp</dimen>
+    <dimen name="popup_like_yoff">-110dp</dimen>
+</resources>

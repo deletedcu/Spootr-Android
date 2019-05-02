@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorMain"
+        android:id="@+id/relativeLayout_privacy_top">
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:id="@+id/button_privacy_back"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:padding="@dimen/padding_10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontsize_20dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView_privacy"
+        android:layout_below="@+id/relativeLayout_privacy_top"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorShadow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorMain"
+        android:id="@+id/relativeLayout_setting_top">
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:id="@+id/button_settings_back"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/padding_10dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontsize_20dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:text="Push Notifications"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fontsize_17dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:paddingTop="@dimen/padding_10dp"
+                    android:paddingBottom="@dimen/padding_5dp"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Likes"
+                        android:id="@+id/textView7"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/fontsize_15dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"/>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch_likes"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:paddingBottom="@dimen/padding_5dp"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comments"
+                        android:id="@+id/textView8"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/fontsize_15dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"/>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch_comments"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chat"
+                        android:id="@+id/textView9"
+                        android:textColor="@color/colorDarkGray"
+                        android:textSize="@dimen/fontsize_15dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"/>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch_chat"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:text="Love Spootr"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fontsize_17dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/button_settings_facebook"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Like us an Facebook"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/fontsize_15dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@color/colorWhite"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/button_settings_twitter"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Follow us an Twitter"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/fontsize_15dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@color/colorWhite"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/button_settings_app"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Rate our app"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/fontsize_15dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fontsize_20dp"
+                    android:paddingLeft="@dimen/image_size_20dp"
+                    android:text="Support"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fontsize_17dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/button_settings_terms"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Terms of Use"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/fontsize_15dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@color/colorWhite"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/button_settings_privacy"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/fontsize_15dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@color/colorWhite"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/button_settings_contact"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Contact us"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/fontsize_15dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@color/colorWhite"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/button_settings_blocklist"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:gravity="left|center_vertical"
+                    android:text="Block List"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/fontsize_15dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@color/colorWhite"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/button_settings_signout"
+                    android:background="@color/colorWhite"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:text="Sign Out"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/fontsize_15dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/button_settings_delete"
+                    android:layout_marginTop="@dimen/margin_40dp"
+                    android:background="@color/colorWhite"
+                    android:text="Delete Account"
+                    android:textColor="@color/colorFontGray"
+                    android:textSize="@dimen/fontsize_17dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>

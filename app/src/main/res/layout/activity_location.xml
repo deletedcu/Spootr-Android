@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    tools:context="com.ottawa.spootr2.activity.LocationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Location"
+        android:id="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorFontWhite"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spootr uses your location to show you what others have spotted in your area. To do that you will need to give us permission to use your location"
+        android:id="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:textColor="@color/colorFontWhite"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+    <ImageView
+        android:layout_width="@dimen/image_size_100dp"
+        android:layout_height="@dimen/image_size_100dp"
+        android:id="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/spootr"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_40dp"
+        android:text="Okay"
+        android:id="@+id/ok_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button"
+        android:textSize="@dimen/fontsize_17dp"
+        android:textColor="@color/colorFontWhite"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_40dp"
+        android:layout_marginRight="@dimen/margin_40dp" />
+
+
+</RelativeLayout>

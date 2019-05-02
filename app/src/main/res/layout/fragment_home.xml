@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:id="@+id/mainlayout_top"
+        android:background="@color/colorMain">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="@dimen/header_height"
+                android:layout_height="@dimen/header_height"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/button_home_new"
+                    android:src="@drawable/newpost_button"
+                    android:scaleType="centerInside"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="13dp"
+                    android:paddingBottom="19dp"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_home_new"
+                    android:text="New"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontsize_10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/padding_5dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/header_height"
+                android:layout_height="@dimen/header_height"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/button_home_hot"
+                    android:src="@drawable/hotpost_button"
+                    android:scaleType="centerInside"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="13dp"
+                    android:paddingBottom="19dp"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_home_hot"
+                    android:text="Hot"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontsize_10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/padding_5dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.ottawa.spootr2.library.pullloadmore.PullLoadMoreRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_main"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/mainlayout_top"
+        android:divider="@null"/>
+
+</RelativeLayout>

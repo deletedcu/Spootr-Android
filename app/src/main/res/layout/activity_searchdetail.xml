@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_searchdetail"
+        android:name="com.google.android.gms.maps.MapFragment"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFontGray"
+        android:alpha="0.7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="@color/colorMain">
+            <ImageButton
+                android:layout_width="@dimen/header_height"
+                android:layout_height="@dimen/header_height"
+                android:id="@+id/button_searchdetail_back"
+                android:src="@drawable/back"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:padding="@dimen/padding_10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_searchdetail"
+                android:textSize="@dimen/fontsize_20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <com.ottawa.spootr2.library.pullloadmore.PullLoadMoreRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview_searchdetail"
+            android:background="@android:color/transparent"
+            android:divider="@null"/>
+    </LinearLayout>
+</RelativeLayout>

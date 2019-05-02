@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which one is you?"
+            android:id="@+id/textView20"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorFontWhite"
+            android:textSize="@dimen/fontsize_20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"/>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gridView_emoji"
+            android:layout_below="@+id/textView20"
+            android:layout_above="@+id/button_signemoji_next"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:layout_marginBottom="@dimen/image_size_20dp"
+            android:verticalSpacing="1dp"
+            android:horizontalSpacing="1dp"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_40dp"
+            android:id="@+id/button_signemoji_next"
+            android:text="Get Started"
+            android:textSize="@dimen/fontsize_17dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorFontWhite"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="@dimen/margin_40dp"
+            android:layout_marginRight="@dimen/margin_40dp" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Select Circle"
+        android:textStyle="bold"
+        android:textSize="@dimen/fontsize_17dp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:background="@color/colorButton"/>
+    <ListView
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:id="@+id/list_popup_circle"
+        android:layout_marginBottom="@dimen/padding_10dp">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_10dp"
+    android:paddingRight="@dimen/padding_10dp">
+
+    <ImageView
+        android:layout_width="@dimen/image_size_30dp"
+        android:layout_height="@dimen/image_size_30dp"
+        android:id="@+id/image_message_receive_user"
+        android:background="@android:color/transparent"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sms_receive_layout"
+        android:orientation="vertical"
+        android:background="@drawable/bubble_receive"
+        android:layout_toRightOf="@+id/image_message_receive_user">
+
+        <TextView
+            android:id="@+id/text_message_receive_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontsize_17dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:maxWidth="250dp"
+            android:minWidth="80dp"/>
+
+        <TextView
+            android:id="@+id/text_message_receive_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:textSize="@dimen/fontsize_13dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorDarkGray"
+            android:layout_marginTop="@dimen/padding_5dp"/>
+    </LinearLayout>
+</RelativeLayout>

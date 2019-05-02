@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_10dp"
+    android:paddingRight="@dimen/padding_10dp">
+
+    <LinearLayout
+        android:id="@+id/sms_layout"
+        android:background="@drawable/bubble_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/text_message_send_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontsize_17dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:maxWidth="250dp"
+            android:minWidth="80dp">
+        </TextView>
+        <TextView
+            android:id="@+id/text_message_send_date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:textSize="@dimen/fontsize_13dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/text_message_send_content"
+            android:layout_marginTop="@dimen/padding_5dp">
+        </TextView>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/circle_progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_alignBottom="@+id/sms_layout"
+        android:layout_toLeftOf="@+id/sms_layout"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/text_message_failed"
+        android:text="Failed"
+        android:textColor="@color/colorRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sms_layout"
+        android:layout_toLeftOf="@+id/circle_progress"
+        android:visibility="gone"/>
+
+</RelativeLayout>
